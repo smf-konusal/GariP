@@ -202,10 +202,6 @@ function template_body_above()
 	// Wrapper div now echoes permanently for better layout options. h1 a is now target for "Go up" links.
 			if(!empty($settings['snrjmenu2'])){
 			echo '<div id="content-wrapper" class="d-flex flex-column">
-						<a class="mobile_user_menu smenu">
-							<span class="main_icons bars"></span>
-						</a>
-						
 						<div id="main_menu" class="dikeymenu navbar-light bg-white sticky-top">
 							<div id="mobile_user_menu" class="popup_container">
 								<div class="popup_window description">
@@ -223,7 +219,7 @@ function template_body_above()
 			}
 			echo'
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                   ',!empty($settings['snrjmenu2']) ? '' : ' <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="main_icons bars"></i></button> ','';
+                   ',!empty($settings['snrjmenu2']) ? '' : ' <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="main_icons bars"></i></button> ','<a class="mobile_user_menu smenu"><span class="main_icons bars"></span></a>';
 				if ($context['allow_search'])
 				{
 					echo '
