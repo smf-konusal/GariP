@@ -4251,3 +4251,7 @@ img.theme_thumbnail {
 	top: -7px;
 }	
 }
+
+.display_none{
+	display: none;
+}

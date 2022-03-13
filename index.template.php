@@ -472,6 +472,7 @@ function template_html_below()
   $("#sidebarToggle, #sidebarToggleTop").on(\'click\', function(e) {
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled");
+    $(".sidebar-haberler-yok-et").toggleClass("display_none");
     if ($(".sidebar").hasClass("toggled")) {
       $(\'.sidebar .collapse\').collapse(\'hide\');
     };
@@ -673,10 +674,13 @@ href="', $button['href'], '"', isset($button['target']) ? ' target="' . $button[
 
 	echo ' <hr class="sidebar-divider">';
 	if (!empty($settings['enable_news']) && !empty($context['random_news_line']))
-		echo ' <div class="sidebar-heading">', $txt['news'], '</div>
+		echo ' 
+			<div class="sidebar-haberler-yok-et">
+				<div class="sidebar-heading">', $txt['news'], '</div>
 					<div class="sidebar-card d-none d-lg-flex">
 						<pc lass="text-center mb-2">', $context['random_news_line'], '</p>
-					</div>';
+					</div>
+			</div>';
 
 	echo '<div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
