@@ -9,7 +9,14 @@
  *
  * @version 2.1.0
  */
-
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.konusal.com
+ * Copyright 2022 GariP
+ *
+ */
 /**
  * The top part of the outer layer of the boardindex
  */
@@ -270,9 +277,9 @@ function template_bi_board_children($board)
 
 		echo '
 			<div id="board_', $board['id'], '_children"  class="dropdown">
-						<button class="btn btn-default btn-sm dropdown-toggle" type="button" id="board_', $board['id'], '" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">', $txt['sub_boards'], '
+						<button class="btn btn-default btn-sm dropdown-toggle" type="button" id="board_', $board['id'], '_alt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">', $txt['sub_boards'], '
 							<span class="caret"></span></button>
-							<ul class="dropdown-menu" aria-labelledby="board_', $board['id'], '">', implode($children), '</ul>
+							<ul class="dropdown-menu" aria-labelledby="board_', $board['id'], '_alt">', implode($children), '</ul>
 			</div>';
 	}
 }

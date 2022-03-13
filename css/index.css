@@ -1050,7 +1050,15 @@ text-align: center;float: none;
 	margin: 0 0 6px 0;
 	overflow: hidden;
 }
-
+ul.konusal{
+	float: right;
+	position: relative;
+	right: 50%;
+}
+ul.konusal >li{
+	left: 50%;
+	position: relative;
+}
 /* Styles for the standard button lists.
 ------------------------------------------------------- */
 .buttonlist, .buttonrow, .pagelinks {

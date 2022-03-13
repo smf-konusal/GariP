@@ -1,6 +1,13 @@
 <?php
 // Version: 2.1.0; Settings
-
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.konusal.com
+ * Copyright 2022 GariP
+ *
+ */
 global $settings;
 
 // argument(s): images_url as saved in settings

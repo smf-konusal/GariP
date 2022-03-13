@@ -9,7 +9,14 @@
  *
  * @version 2.1.0
  */
-
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.konusal.com
+ * Copyright 2022 GariP
+ *
+ */
 /*	This template is, perhaps, the most important template in the theme. It
 	contains the main template layer that displays the header and footer of
 	the forum, namely with main_above and main_below. It also contains the
@@ -219,7 +226,7 @@ function template_body_above()
 			}
 			echo'
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                   ',!empty($settings['snrjmenu2']) ? '' : ' <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="main_icons bars"></i></button> ','<a class="mobile_user_menu smenu"><span class="main_icons bars"></span></a>';
+                   ',!empty($settings['snrjmenu2']) ? '<a class="mobile_user_menu smenu"><span class="main_icons bars"></span></a>' : ' <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="main_icons bars"></i></button> ','';
 				if ($context['allow_search'])
 				{
 					echo '
@@ -299,7 +306,7 @@ function template_body_above()
 							</li>';
 							
 					// Firstly, the user's menu
-					echo ' <div class="topbar-divider d-none d-sm-block"></div>
+					echo ' <li class="topbar-divider d-none d-sm-block"></li>
 							<li class="nav-item">
 								<a href="', $scripturl, '?action=profile"', !empty($context['self_profile']) ? ' class="nav-link active"' : ' class="nav-link"', ' id="profile_menu_top" onclick="return false;"><span class="mr-2 d-none d-lg-inline text-gray-600">', $context['user']['name'], '</span>';
 
@@ -452,7 +459,6 @@ function template_body_below()
 	echo '
 		</div>
 	</div><!-- #footer -->';
-
 }
 
 /**
@@ -590,38 +596,30 @@ function template_menu()
 {
 	global $context,$settings,$txt,$scripturl;
 
-	echo '        <ul class="navbar-nav renklendir sidebar sidebar-dark accordion" id="accordionSidebar">
-
+	echo '<ul class="navbar-nav renklendir sidebar sidebar-dark accordion" id="accordionSidebar">
+			<li>
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="',$scripturl,'">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="main_icons laugh-wink"></i>
                 </div>
                 <div class="sidebar-brand-text mx-3">'.(!empty($settings['menubaslik'])? ''.$settings['menubaslik'].'':''.$txt['menubaslik'].'' ).'</div>
-            </a>';
+            </a>
+			</li>';
 
 	// Note: Menu markup has been cleaned up to remove unnecessary spans and classes.
 	foreach ($context['menu_buttons'] as $act => $button)
 	{
 		echo '
 						<li class="nav-item button_', $act, '">
-
- 
-
-<a class="nav-link '.($button['active_button'] ? ' active ' : ' '.(empty($button['sub_buttons']) ? ' ' : ' collapsed').'').'" 
-
-'.(empty($button['sub_buttons']) ? ' ' : ' data-toggle="collapse" data-target="#' . $act . '" aria-expanded="true" aria-controls="' .$act . '"').'
-
-href="', $button['href'], '"', isset($button['target']) ? ' target="' . $button['target'] . '"' : '', isset($button['onclick']) ? ' onclick="' . $button['onclick'] . '"' : '', '>					
-						
-						
-						
-								', $button['icon'], '<span class="textmenu">', $button['title'], !empty($button['amt']) ? ' <span class="amt">' . $button['amt'] . '</span>' : '', '</span>
-							</a>';
+								<a class="nav-link '.($button['active_button'] ? ' active ' : ' '.(empty($button['sub_buttons']) ? ' ' : ' collapsed').'').'" 
+								'.(empty($button['sub_buttons']) ? ' ' : ' data-toggle="collapse" data-target="#' . $act . '" aria-expanded="true" aria-controls="' .$act . '"').'
+								href="', $button['href'], '"', isset($button['target']) ? ' target="' . $button['target'] . '"' : '', isset($button['onclick']) ? ' onclick="' . $button['onclick'] . '"' : '', '>', $button['icon'], '<span class="textmenu">', $button['title'], !empty($button['amt']) ? ' <span class="amt">' . $button['amt'] . '</span>' : '', '</span>
+								</a>';
 
 		// 2nd level menus
 		if (!empty($button['sub_buttons']))
 		{
-			echo '<div id="' . $act . '" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+			echo '<div id="' . $act . '" class="collapse" data-parent="#accordionSidebar">
 							<ul class="text-gray-100 py-2 collapse-inner rounded">';
 
 			foreach ($button['sub_buttons'] as $ac => $childbutton)
@@ -660,27 +658,26 @@ href="', $button['href'], '"', isset($button['target']) ? ' target="' . $button[
 	}
 
 	if ($context['user']['is_logged'])
-		echo '<hr class="sidebar-divider">
-							<li class="nav-item">
+		echo '
+							<li class="nav-item"><hr class="sidebar-divider">
 								<a class="nav-link" href="', $scripturl, '?action=unread" title="', $txt['unread_since_visit'], '">', $txt['view_unread_category'], '</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="', $scripturl, '?action=unreadreplies" title="', $txt['show_unread_replies'], '">', $txt['unread_replies'], '</a>
 							</li>';
 
-	echo ' <hr class="sidebar-divider">';
 	if (!empty($settings['enable_news']) && !empty($context['random_news_line']))
 		echo ' 
-			<div class="sidebar-haberler-yok-et">
+			<li class="sidebar-haberler-yok-et"><hr class="sidebar-divider">
 				<div class="sidebar-heading">', $txt['news'], '</div>
 					<div class="sidebar-card d-none d-lg-flex">
 						<pc lass="text-center mb-2">', $context['random_news_line'], '</p>
 					</div>
-			</div>';
+			</li>';
 
-	echo '<div class="text-center d-none d-md-inline">
+	echo '<li class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+            </li>
         </ul>';
 }
 function template_menu2()
@@ -688,7 +685,7 @@ function template_menu2()
 global $context;
 
 	echo '
-					<ul class="dropmenu menu_nav">';
+					<ul class="dropmenu menu_nav konusal">';
 
 	// Note: Menu markup has been cleaned up to remove unnecessary spans and classes.
 	foreach ($context['menu_buttons'] as $act => $button)

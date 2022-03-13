@@ -9,7 +9,14 @@
  *
  * @version 2.1.0
  */
-
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.konusal.com
+ * Copyright 2022 GariP
+ *
+ */
 /**
  * This template handles displaying a topic
  */

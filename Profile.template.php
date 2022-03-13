@@ -9,7 +9,14 @@
  *
  * @version 2.1.0
  */
-
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.konusal.com
+ * Copyright 2022 GariP
+ *
+ */
 /**
  * Minor stuff shown above the main profile - mostly used for error messages and showing that the profile update was successful.
  */
