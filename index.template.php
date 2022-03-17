@@ -81,7 +81,7 @@ function template_init()
 	if (!isset($settings['disable_files']))
 		$settings['disable_files'] = array();
 
-		$settings['theme_variants'] = array('1','2','3','4','5');
+		$settings['theme_variants'] = array('1','2','3','4','5', '6');
 }
 
 /**

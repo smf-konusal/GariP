@@ -1,4 +1,12 @@
 :root{
+--renklendir: linear-gradient(
+    45deg,
+    rgba(204, 0, 255, 1) 0%,
+    rgba(99, 1, 143, 1) 33%,
+    rgba(205, 87, 215, 1) 50%,
+    rgba(99, 1, 143, 1) 66%,
+    rgba(243, 0, 255, 1) 100%
+  );
 --cat_bar :linear-gradient(
     45deg,
     rgba(204, 0, 255, 1) 0%,

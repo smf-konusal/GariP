@@ -1,0 +1,53 @@
+:root{
+--renklendir: linear-gradient(
+    45deg,
+    rgba(204, 0, 255, 1) 0%,
+    rgba(99, 1, 143, 1) 33%,
+    rgba(205, 87, 215, 1) 50%,
+    rgba(99, 1, 143, 1) 66%,
+    rgba(243, 0, 255, 1) 100%
+  );
+--cat_bar :linear-gradient(
+    45deg,
+    rgba(204, 0, 255, 1) 0%,
+    rgba(99, 1, 143, 1) 33%,
+    rgba(205, 87, 215, 1) 50%,
+    rgba(99, 1, 143, 1) 66%,
+    rgba(243, 0, 255, 1) 100%
+  );
+--nth_chi1:linear-gradient(to left, #7299e6, #8572e6);
+--nth_chi2:linear-gradient(to left, #bf72e6, #e672d3);
+--nth_chi3:linear-gradient(to left, #e67299, #e68572);
+--nth_chi4:linear-gradient(to left, #e6bf72, #d3e672);
+--nth_chi5:linear-gradient(to left, #99e672, #72e685);
+--nth_chi6:linear-gradient(to left, #72e6bf, #72d3e6);
+--nth_chi7:linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+--nth_chi8:linear-gradient(
+    90deg,
+    rgba(22, 103, 1, 1) 0%,
+    rgba(9, 121, 12, 1) 35%,
+    rgba(39, 255, 0, 1) 100%
+  );
+--nth_chi9:linear-gradient(
+    90deg,
+    rgba(103, 1, 1, 1) 0%,
+    rgba(121, 9, 9, 1) 35%,
+    rgba(255, 0, 0, 1) 100%
+  );
+--nth_chi10:linear-gradient(
+    90deg,
+    rgba(103, 68, 1, 1) 0%,
+    rgba(121, 86, 9, 1) 35%,
+    rgba(255, 149, 0, 1) 100%
+  );
+
+--up_contain:linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
+--button_hover:linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
+--top_menu:linear-gradient(#e2e9f3 0%, #fff 70%);
+--div_catbar:#557ea0;
+}
