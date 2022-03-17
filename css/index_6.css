@@ -1,24 +1,24 @@
 :root{
 --renklendir: linear-gradient(
     45deg,
-    rgba(204, 0, 255, 1) 0%,
-    rgba(99, 1, 143, 1) 33%,
-    rgba(205, 87, 215, 1) 50%,
-    rgba(99, 1, 143, 1) 66%,
-    rgba(243, 0, 255, 1) 100%
+    #302120 0%,
+    #e6d6d3 33%,
+    #302120 50%,
+    #4b3c3b 66%,
+    #302120 100%
   );
 --cat_bar :linear-gradient(
     45deg,
-    rgba(204, 0, 255, 1) 0%,
-    rgba(99, 1, 143, 1) 33%,
-    rgba(205, 87, 215, 1) 50%,
-    rgba(99, 1, 143, 1) 66%,
-    rgba(243, 0, 255, 1) 100%
+    #302120 0%,
+    #e6d6d3 33%,
+    #302120 50%,
+    #4b3c3b 66%,
+    #302120 100%
   );
---nth_chi1:linear-gradient(to left, #7299e6, #8572e6);
---nth_chi2:linear-gradient(to left, #bf72e6, #e672d3);
---nth_chi3:linear-gradient(to left, #e67299, #e68572);
---nth_chi4:linear-gradient(to left, #e6bf72, #d3e672);
+--nth_chi1:linear-gradient(to left, #302120, #4b3c3b);
+--nth_chi2:linear-gradient(to left, #4b3c3b, #302120);
+--nth_chi3:linear-gradient(to left, #e6d6d3, #4b3c3b);
+--nth_chi4:linear-gradient(to left, #302120, #e6d6d3);
 --nth_chi5:linear-gradient(to left, #99e672, #72e685);
 --nth_chi6:linear-gradient(to left, #72e6bf, #72d3e6);
 --nth_chi7:linear-gradient(
@@ -46,8 +46,8 @@
     rgba(255, 149, 0, 1) 100%
   );
 
---up_contain:linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
---button_hover:linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
---top_menu:linear-gradient(#e2e9f3 0%, #fff 70%);
+--up_contain:linear-gradient(to bottom, #e6d6d3 0%, #f1e7e4 95%);
+--button_hover:linear-gradient(to bottom, #e6d6d3 0%, #4b3c3b 70%);
+--top_menu:linear-gradient(#4b3c3b 0%, #f1e7e4 70%);
 --div_catbar:#557ea0;
 }
