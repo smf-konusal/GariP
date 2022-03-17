@@ -1,3 +1,13 @@
+:root {
+  --renklendir: linear-gradient(
+    45deg,
+    rgba(204, 0, 255, 1) 0%,
+    rgba(99, 1, 143, 1) 33%,
+    rgba(205, 87, 215, 1) 50%,
+    rgba(99, 1, 143, 1) 66%,
+    rgba(243, 0, 255, 1) 100%
+  );
+}
 html {
   background: #fff;
   scroll-padding-top: 3rem;
@@ -3909,14 +3919,7 @@ h3.catbg .icon {
   min-height: 18px;
 }
 .renklendir {
-  background: linear-gradient(
-    45deg,
-    rgba(204, 0, 255, 1) 0%,
-    rgba(99, 1, 143, 1) 33%,
-    rgba(205, 87, 215, 1) 50%,
-    rgba(99, 1, 143, 1) 66%,
-    rgba(243, 0, 255, 1) 100%
-  );
+  background: var(--renklendir);
 }
 
 div.cat_bar .catbg::after {
