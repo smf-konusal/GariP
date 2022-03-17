@@ -37,6 +37,11 @@
     rgba(121, 86, 9, 1) 35%,
     rgba(255, 149, 0, 1) 100%
   );
+
+--up_contain:linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
+--button_hover:linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
+--top_menu:linear-gradient(#e2e9f3 0%, #fff 70%);
+--div_catbar:#557ea0;
 }
 html {
   background: #fff;
@@ -965,7 +970,7 @@ tr.windowbg {
   background: #ececec;
 }
 div.cat_bar {
-  background: #557ea0;
+  background: var(--div_catbar);
   border-bottom: 1px solid #777;
   box-shadow: 0 16px 20px rgba(255, 255, 255, 0.15) inset;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
@@ -1189,19 +1194,19 @@ h4.subbg,
 .notify_dropdown a:hover,
 .notify_dropdown a:focus {
   background: #fff;
-  background-image: linear-gradient(#e2e9f3 0%, #fff 70%);
+  background-image: var(--top_menu);
 }
 .button:hover,
 #search_form .button:hover,
 .quickbuttons li:hover {
   background: #fff;
-  background-image: linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
+  background-image: var(--button_hover);
 }
 .navigate_section ul,
 .popup_content,
 .up_contain {
   background: #fff;
-  background-image: linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
+  background-image: var(--up_contain);
 }
 
 .notify_dropdown a:hover,
