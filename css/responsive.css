@@ -866,3 +866,21 @@
 @media (max-width: 320px) {
 
 }
+@media screen and (max-width: 480px) {
+	
+	.snrjpostbit .poster {
+		float: none;
+		width: 100%;
+		height: auto;
+		border-right: none;
+		padding: 8px;
+	}
+	.snrjpostbit .postarea, .snrjpostbit .moderatorbar {
+		margin: 0;
+	}	
+	.snrjpostbit .postarea::before{
+		transform: rotate(45deg);
+		left: 48%;
+		top: -7px;
+	}	
+	}

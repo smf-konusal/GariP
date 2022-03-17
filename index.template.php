@@ -76,11 +76,12 @@ function template_init()
 		'next_page' => '<span class="main_icons next_page"></span>',
 		'extra_after' => '',
 	);
-
 	// Allow css/js files to be disabled for this specific theme.
 	// Add the identifier as an array key. IE array('smf_script'); Some external files might not add identifiers, on those cases SMF uses its filename as reference.
 	if (!isset($settings['disable_files']))
 		$settings['disable_files'] = array();
+
+		$settings['theme_variants'] = array('1','2','3','4','5');
 }
 
 /**
@@ -524,7 +525,28 @@ function template_html_below()
   });
 
 })(jQuery); // End of use strict
-</script>';
+</script><svg class="grovmenu">
+<defs>
+  <filter id="filt">
+	<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+	<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+	<feBlend in2="filt" in="SourceGraphic" result="mix" />
+  </filter>
+</defs>
+</svg>
+<div class="wrap">
+<input type="checkbox" id="checking" style="display:none;" />
+<a class="blob" href="?variant=1"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=2"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=3"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=4"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=5"><span class="main_icons current_theme"></span></a>
+<label class="blob" for="checking"> 
+  <span class="bar"></span> 
+  <span class="bar"></span> 
+  <span class="bar"></span> 
+</label>
+</div>';
 	// Load in any javascipt that could be deferred to the end of the page
 	template_javascript(true);
 	echo '
