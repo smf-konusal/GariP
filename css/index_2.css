@@ -416,8 +416,10 @@ a.moderation_link:visited {
   color: rgb(245, 245, 245);
 }
 h1.forumtitle a {
-  color: #ce02b8;
-  text-shadow: 1px 1px 1px rgba(255, 51, 242, 0.3);
+  color: #ad009b;
+  text-shadow: 0 2px 0 hsl(295.4, 82.5%, 24.7%),
+    0 3px 3px rgba(181, 77, 170, 0.2), 0 5px 10px rgba(136, 136, 136, 0.3);
+  text-decoration: none;
 }
 
 #inner_wrap {
@@ -684,7 +686,7 @@ dl.addrules dt.left {
 }
 
 .popup_container {
-  background: rgba(22, 35, 44, 0.5);
+  background: rgba(112, 75, 108, 0.5);
 }
 
 .popup_window,
@@ -695,7 +697,7 @@ dl.addrules dt.left {
   border: 1px solid rgb(48, 47, 47);
 }
 .popup_heading {
-  color: #bf6900;
+  color: #ffc073;
 }
 
 .popup_ {
@@ -704,7 +706,10 @@ dl.addrules dt.left {
   border-bottom: 1px solid rgb(46, 46, 46);
   box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(255, 255, 255, 0.2);
 }
-
+.popup_content {
+  color: rgb(207, 202, 202);
+  border: 1px solid #604b6c;
+}
 #main_menu .popup_container,
 #genericmenu > .popup_container,
 #adm_submenus > .popup_container {

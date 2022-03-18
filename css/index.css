@@ -4696,7 +4696,7 @@ img.theme_thumbnail {
   background-clip: border-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
-  z-index: -1;
+  z-index: 0;
 }
 .bar {
   display: block;
