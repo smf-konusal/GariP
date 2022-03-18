@@ -1,5 +1,5 @@
 :root {
---renklendir: linear-gradient(
+  --renklendir: linear-gradient(
     45deg,
     rgba(204, 0, 255, 1) 0%,
     rgba(99, 1, 143, 1) 33%,
@@ -7,7 +7,7 @@
     rgba(99, 1, 143, 1) 66%,
     rgba(243, 0, 255, 1) 100%
   );
---cat_bar :linear-gradient(
+  --cat_bar: linear-gradient(
     45deg,
     rgba(204, 0, 255, 1) 0%,
     rgba(99, 1, 143, 1) 33%,
@@ -15,41 +15,41 @@
     rgba(99, 1, 143, 1) 66%,
     rgba(243, 0, 255, 1) 100%
   );
---nth_chi1:linear-gradient(to left, #7299e6, #8572e6);
---nth_chi2:linear-gradient(to left, #bf72e6, #e672d3);
---nth_chi3:linear-gradient(to left, #e67299, #e68572);
---nth_chi4:linear-gradient(to left, #e6bf72, #d3e672);
---nth_chi5:linear-gradient(to left, #99e672, #72e685);
---nth_chi6:linear-gradient(to left, #72e6bf, #72d3e6);
---nth_chi7:linear-gradient(
+  --nth_chi1: linear-gradient(to left, #7299e6, #8572e6);
+  --nth_chi2: linear-gradient(to left, #bf72e6, #e672d3);
+  --nth_chi3: linear-gradient(to left, #e67299, #e68572);
+  --nth_chi4: linear-gradient(to left, #e6bf72, #d3e672);
+  --nth_chi5: linear-gradient(to left, #99e672, #72e685);
+  --nth_chi6: linear-gradient(to left, #72e6bf, #72d3e6);
+  --nth_chi7: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
   );
---nth_chi8:linear-gradient(
+  --nth_chi8: linear-gradient(
     90deg,
     rgba(22, 103, 1, 1) 0%,
     rgba(9, 121, 12, 1) 35%,
     rgba(39, 255, 0, 1) 100%
   );
---nth_chi9:linear-gradient(
+  --nth_chi9: linear-gradient(
     90deg,
     rgba(103, 1, 1, 1) 0%,
     rgba(121, 9, 9, 1) 35%,
     rgba(255, 0, 0, 1) 100%
   );
---nth_chi10:linear-gradient(
+  --nth_chi10: linear-gradient(
     90deg,
     rgba(103, 68, 1, 1) 0%,
     rgba(121, 86, 9, 1) 35%,
     rgba(255, 149, 0, 1) 100%
   );
 
---up_contain:linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
---button_hover:linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
---top_menu:linear-gradient(#e2e9f3 0%, #fff 70%);
---div_catbar:#557ea0;
+  --up_contain: linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
+  --button_hover: linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
+  --top_menu: linear-gradient(#e2e9f3 0%, #fff 70%);
+  --div_catbar: #557ea0;
 }
 html {
   background: #fff;
@@ -2968,6 +2968,9 @@ h3 .collapse {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.board_icon a:hover {
+  text-decoration: none;
+}
 .board_icon a.board_on2 {
   background: -webkit-linear-gradient(
     90deg,
@@ -4697,7 +4700,7 @@ img.theme_thumbnail {
 }
 .bar {
   display: block;
-  width: 24px;
+  width: 18px;
   height: 5px;
   margin: 5px auto;
   background-color: #fff;
@@ -4709,12 +4712,12 @@ img.theme_thumbnail {
   -ms-transition: all 0.4s linear 0.1s;
 }
 .bar:first-child {
-  margin-top: 14px;
+  margin-top: 4px;
 }
 .wrap {
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 80px;
+  right: 80px;
   filter: url("#filt");
   -webkit-filter: url("#filt");
 }
@@ -4724,8 +4727,8 @@ img.theme_thumbnail {
   border: none;
   outline: none;
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   z-index: 10;
   background-color: #f436c5;
@@ -4747,8 +4750,8 @@ img.theme_thumbnail {
   -ms-transition: transform 0.5s ease-in-out 0.2s;
 }
 .wrap .blob:not([for="checking"]) {
-  width: 50px;
-  height: 50px;
+  width: 36px;
+  height: 36px;
   top: 0;
   left: 0;
   font-size: 30px;
@@ -4768,29 +4771,29 @@ img.theme_thumbnail {
 }
 
 .wrap > #checking:checked ~ .blob:nth-child(2) {
-  margin-top: -137px;
-  margin-left: -45px;
+  margin-top: -99px;
+  margin-left: 6px;
   background-color: #fff;
 }
 .wrap > #checking:checked ~ .blob:nth-child(3) {
-  margin-top: -157px;
-  margin-left: 4px;
+  margin-top: -91px;
+  margin-left: -33px;
   background-color: #fff;
 }
 
 .wrap > #checking:checked ~ .blob:nth-child(4) {
-  margin-top: -98px;
-  margin-left: -82px;
+  margin-top: -66px;
+  margin-left: -66px;
   background-color: #fff;
 }
 .wrap > #checking:checked ~ .blob:nth-child(5) {
-  margin-top: 3px;
-  margin-left: -135px;
+  margin-top: -33px;
+  margin-left: -90px;
   background-color: #fff;
 }
 .wrap > #checking:checked ~ .blob:nth-child(6) {
-  margin-top: -47px;
-  margin-left: -112px;
+  margin-top: 10px;
+  margin-left: -90px;
   background-color: #fff;
 }
 .wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(1) {
@@ -4799,7 +4802,7 @@ img.theme_thumbnail {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  margin-top: 24px;
+  margin-top: 14px;
 }
 .wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(2) {
   transform: rotate(-45deg);
@@ -4813,7 +4816,7 @@ img.theme_thumbnail {
   opacity: 0;
 }
 .blob .main_icons {
-  margin: 17px 0px 0px 17px;
+  margin: 8px 0px 0px 12px;
 }
 .grovmenu {
   position: absolute;

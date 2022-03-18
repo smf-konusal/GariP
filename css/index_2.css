@@ -1,57 +1,111 @@
+:root {
+  --renklendir: linear-gradient(to bottom, rgb(8, 8, 8) 0%, #141414 95%);
+  --cat_bar: linear-gradient(
+    45deg,
+    rgb(56, 55, 56) 0%,
+    rgba(99, 1, 143, 1) 33%,
+    rgb(57, 50, 58) 50%,
+    rgba(99, 1, 143, 1) 66%,
+    rgb(23, 16, 24) 100%
+  );
+  --nth_chi1: linear-gradient(to left, #323436, #1e1d25);
+  --nth_chi2: linear-gradient(to left, #4b3158, #742366);
+  --nth_chi3: linear-gradient(to left, #4b373e, #632b20);
+  --nth_chi4: linear-gradient(to left, #685c45, #545f1b);
+  --nth_chi5: linear-gradient(to left, #415537, #184d21);
+  --nth_chi6: linear-gradient(to left, #2a463d, #1c4a53);
+  --nth_chi7: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  --nth_chi8: linear-gradient(
+    90deg,
+    rgba(22, 103, 1, 1) 0%,
+    rgba(9, 121, 12, 1) 35%,
+    rgba(39, 255, 0, 1) 100%
+  );
+  --nth_chi9: linear-gradient(
+    90deg,
+    rgba(103, 1, 1, 1) 0%,
+    rgba(121, 9, 9, 1) 35%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  --nth_chi10: linear-gradient(
+    90deg,
+    rgba(103, 68, 1, 1) 0%,
+    rgba(121, 86, 9, 1) 35%,
+    rgba(255, 149, 0, 1) 100%
+  );
+
+  --up_contain: linear-gradient(to bottom, rgb(8, 8, 8) 0%, #1a1a1a 95%);
+  --button_hover: linear-gradient(to bottom, rgb(29, 27, 27) 0%, #212122 70%);
+  --top_menu: linear-gradient(to bottom, rgb(41, 39, 39) 0%, #1a1c1f 95%);
+  --div_catbar: #191b1d;
+}
 html {
-  background: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    #2e2d2d 0%,
+    #252525 95%
+  ) !important;
 }
 
 body {
-  background: #fff;
-  color: #4d4d4d;
+  background-image: linear-gradient(
+    to bottom,
+    #222121 0%,
+    #1f1e1e 95%
+  ) !important;
+  color: #9a9a9a;
 }
 
 ::selection {
-  background: #99d4ff;
-  color: rgba(0, 0, 0, 0.6);
+  background: #272727;
+  color: rgba(184, 179, 179, 0.6);
 }
 
 input,
 button,
 select,
 textarea {
-  color: #222;
-  background: #fff;
-  border: 1px solid #bbb;
-  box-shadow: 1px 2px 1px rgba(160, 187, 221, 0.2) inset;
+  color: rgb(221, 216, 216);
+  background: rgb(10, 10, 10);
+  border: 1px solid rgb(61, 60, 60);
+  box-shadow: 1px 2px 1px rgba(66, 66, 66, 0.2) inset;
 }
 
 input:hover,
 textarea:hover,
 button:hover,
 select:hover {
-  border-color: #82a2bc;
+  border-color: #1b2329;
 }
 
 textarea:hover {
-  background: #fbfbfb;
+  background: #222222;
 }
 
 input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  border-color: #7fb0d8;
-  background: #fff;
+  border-color: #313131;
+  background: rgb(37, 37, 37);
 }
 
 fieldset {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(90, 89, 89);
 }
 
 fieldset legend {
-  color: #555;
+  color: rgb(73, 73, 73);
 }
 
 strong,
 .strong {
-  color: #444;
+  color: rgb(245, 241, 241);
 }
 
 .cat_bar strong {
@@ -64,7 +118,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444;
+  color: rgb(245, 245, 245);
 }
 
 input[type="checkbox"],
@@ -78,21 +132,21 @@ textarea[disabled],
 select[disabled],
 .button.disabled,
 .button[disabled]:hover {
-  background: #eee;
-  color: #999;
-  border-color: #b6b6b6;
+  background: rgb(56, 56, 56);
+  color: rgb(248, 241, 241);
+  border-color: #757575;
 }
 hr {
-  background: #fff;
-  box-shadow: 0 1px 0 #bbb inset;
+  background: rgb(36, 36, 36);
+  box-shadow: 0 1px 0 rgb(252, 105, 232) inset;
 }
 a,
 a:visited {
-  color: #346;
+  color: rgb(196, 196, 196);
 }
 .new_posts,
 a.new_posts {
-  background: linear-gradient(#f97b00, #884d00);
+  background: linear-gradient(#723a02, #4b2b01);
   color: #fff;
 }
 
@@ -100,8 +154,8 @@ a.new_posts:visited {
   color: #fff;
 }
 blockquote {
-  border: 1px solid #c5c5c5;
-  color: #000;
+  border: 1px solid #757575;
+  color: rgb(214, 214, 214);
 }
 
 blockquote cite {
@@ -117,35 +171,35 @@ blockquote cite::before {
 }
 
 .bbc_standard_quote {
-  background-color: #f8f8f8;
+  background-color: #2e2e2e;
 }
 
 .bbc_alternate_quote {
-  background-color: #ebf4f8;
+  background-color: #3c3d3d;
 }
 .bbc_code {
   font-family: "dejavu sans mono", monaco, "lucida console", "courier new",
     monospace;
-  background: #fcf8e3;
-  border: 1px solid #ccc;
+  background: #303030;
+  border: 1px solid rgb(43, 42, 42);
 }
 .codeheader,
 .quoteheader {
-  color: #666;
-  border: 1px solid #ccc;
-  background: #f5f5f5;
+  color: rgb(247, 244, 244);
+  border: 1px solid rgb(102, 102, 102);
+  background: #202020;
 }
 .bbc_link {
-  border-bottom: 1px solid #a8b6cf;
+  border-bottom: 1px solid #4d535f;
 }
 
 .bbc_link:hover {
-  border-bottom: 1px solid #346;
+  border-bottom: 1px solid rgb(33, 44, 66);
 }
 
 .bbc_img {
-  border: 1px solid #bbc;
-  box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.75);
+  border: 1px solid rgb(85, 85, 88);
+  box-shadow: 3px 3px 8px 0 rgba(255, 108, 230, 0.75);
 }
 .highlight {
   color: #ff7200 !important;
@@ -176,37 +230,37 @@ blockquote cite::before {
 
 a.moderation_link,
 a.moderation_link:visited {
-  background: #f59e00;
+  background: #614003;
 }
 #ajax_in_progress {
-  background: #fff;
-  border-bottom: 4px solid #f96f00;
-  color: #f96f00;
+  background: rgb(34, 34, 34);
+  border-bottom: 4px solid #6e3201;
+  color: #eeab75;
 }
 
 #ajax_in_progress a {
-  color: orange;
+  color: rgb(253, 213, 137);
 }
 
 .postbg {
-  border-left: 1px solid #7f7f7f;
-  border-right: 1px solid #7f7f7f;
+  border-left: 1px solid #2b2a2a;
+  border-right: 1px solid #2c2c2c;
 }
 .auto_suggest_div {
-  border: 1px solid #bbb;
+  border: 1px solid rgb(43, 42, 42);
 }
 
 .auto_suggest_item {
-  background: #ddd;
+  background: rgb(12, 12, 12);
 }
 
 .auto_suggest_item_hover {
-  background: #888;
+  background: rgb(27, 27, 27);
   color: #eee;
 }
 .amt {
   color: #fff;
-  background: #6d90ad;
+  background: #830144;
 }
 
 .dropmenu li .active .amt,
@@ -218,7 +272,7 @@ a.moderation_link:visited {
   border-style: none;
 }
 .dropmenu li strong {
-  color: #333;
+  color: rgb(207, 206, 206);
 }
 
 .dropmenu li a {
@@ -226,54 +280,54 @@ a.moderation_link:visited {
 }
 .dropmenu a.active {
   color: #fff;
-  border-color: #f49a3a;
-  background: linear-gradient(#ffae14, #f5a100);
-  text-shadow: 0 0 2px #000;
+  border-color: #864704;
+  background: linear-gradient(#8d0299, #55014c);
+  text-shadow: 0 0 2px rgb(58, 58, 58);
 }
 .dropmenu > li:hover > a,
 .dropmenu > li > a:focus {
-  background: #597b9f;
-  border: 1px solid #4a6b8c;
+  background: #1d1d1d;
+  border: 1px solid #373838;
   color: #fff;
-  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 4px 4px rgba(255, 95, 207, 0.1) inset;
   text-shadow: 0 0 2px #000;
 }
 .dropmenu li a.active:hover,
 .dropmenu li:hover a.active {
-  background: orange;
-  border: 1px solid #f49a3a;
-  color: #444;
+  background: rgb(136, 0, 102);
+  border: 1px solid #720150;
+  color: rgb(224, 221, 221);
   box-shadow: 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   text-shadow: none;
 }
 .navbar::after {
-  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 11px rgba(195, 18, 210, 0.7);
 }
 
 .pm_unread,
 .alerts_unread {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(53, 53, 53);
 }
 .unread_notify {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(46, 46, 46);
 }
 .unread_notify:hover {
-  background: #eee;
+  background: rgb(12, 12, 12);
 }
 .unread_notify_image .avatar + .alert_icon {
   right: -15px;
-  color: #ff02ef;
+  color: #d4d4d4;
 }
 .align-items-center {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid rgb(54, 54, 54);
 }
 .dropmenu li ul,
 .top_menu {
-  border: solid 1px #999;
-  border-left: solid 1px #bbb;
-  border-top: solid 1px #ccc;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
-  background: #fff;
+  border: solid 1px rgb(58, 58, 58);
+  border-left: solid 1px rgb(80, 79, 79);
+  border-top: solid 1px rgb(83, 83, 83);
+  box-shadow: 0px 0px 6px rgba(229, 104, 241, 0.3);
+  background: rgb(7, 7, 7);
 }
 .dropmenu li li {
   border: 1px solid transparent;
@@ -281,7 +335,7 @@ a.moderation_link:visited {
 .dropmenu li:hover li a,
 .dropmenu li li a {
   background: none;
-  color: #444;
+  color: rgb(255, 249, 249);
   border: none;
 }
 .dropmenu ul a:focus,
@@ -295,9 +349,9 @@ a.moderation_link:visited {
 .dropmenu li li:hover > a,
 .dropmenu li li a:focus,
 .dropmenu li li a:hover {
-  color: #333;
-  border: 1px solid #cfcfcf;
-  border-top: 1px solid #d4dee6;
+  color: rgb(235, 235, 235);
+  border: 1px solid #474747;
+  border-top: 1px solid #424242;
 }
 
 .dropmenu li li.subsections > a::after {
@@ -307,31 +361,32 @@ a.moderation_link:visited {
 .button,
 .quickbuttons > li > a,
 .inline_mod_check {
-  color: #444;
+  color: rgb(250, 249, 249);
   border: 1px solid;
-  border-color: #ddd #bbb #aaa #ddd;
-  box-shadow: 1px 1px 1px rgba(221, 221, 221, 0.57);
+  border-color: rgb(59, 58, 58) rgb(19, 18, 18) rgb(19, 18, 18) rgb(12, 12, 12);
+  box-shadow: 1px 1px 1px rgba(14, 13, 13, 0.57);
 }
 
 .pagesection .button {
-  color: #346;
+  color: rgb(238, 241, 248);
 }
 
 .button:hover,
 .button:focus,
 .quickbuttons > li:hover > a,
 .quickbuttons > li > a:focus {
-  color: #222;
-  border-color: #aaa #ddd #ddd #bbb;
-  box-shadow: -1px -1px 2px rgba(221, 221, 221, 0.7), -1px -2px 4px #ddd inset;
+  color: rgb(252, 248, 248);
+  border-color: rgb(53, 52, 52) rgb(49, 49, 49) rgb(48, 47, 47) rgb(44, 44, 44);
+  box-shadow: -1px -1px 2px rgba(29, 29, 29, 0.7),
+    -1px -2px 4px rgb(29, 29, 29) inset;
 }
 
 .button:hover,
 .button:focus {
-  color: #af6700;
+  color: #fc9d19;
 }
 .button.active {
-  background: #71019a;
+  background: #2b2b2b;
   color: #fff;
   border: 1px solid #71019a;
   text-shadow: 0 0 1px #000;
@@ -340,99 +395,83 @@ a.moderation_link:visited {
 .button.active:hover,
 .button.active:focus {
   color: #ffc187;
-  background: #d900eb;
+  background: #000000;
   box-shadow: none;
 }
 .bg-white {
-  background-color: #fff !important;
+  background-image: linear-gradient(to bottom, rgb(8, 8, 8) 0%, #171717 95%);
+}
+
+.topbar .topbar-divider {
+  border-right: 1px solid rgb(19, 19, 19) !important;
 }
 #top_section {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid rgb(0, 0, 0);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-  background: #fff;
+  background: rgb(0, 0, 0);
 }
 #alerts_menu a,
 #pm_menu a,
 #profile_menu a {
-  color: #444;
+  color: rgb(245, 245, 245);
 }
 h1.forumtitle a {
-  color: #a85400;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #ce02b8;
+  text-shadow: 1px 1px 1px rgba(255, 51, 242, 0.3);
 }
 
 #inner_wrap {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid rgb(83, 83, 83);
 }
 .navigate_section ul {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(85, 84, 84);
   box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.08);
 }
 
 .navigate_section ul li {
-  color: #444;
-  text-shadow: 1px 1px 0 #fff;
+  color: rgb(248, 247, 247);
+  text-shadow: 1px 1px 0 rgb(122, 122, 122);
 }
 .navigate_section ul li .dividers {
-  color: #3f6b8c;
+  color: #86c7f8;
 }
 #footer {
-  border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(
-    to right,
-    #e67691 0%,
-    #cd72df 50%,
-    #7a88e6 100%
-  );
-  border-image-slice: 100%;
-  border-image-slice: 1;
-  border-left: transparent;
-  border-right: transparent;
-  border-bottom: transparent;
-  background-color: #e5e5e5;
+  background-image: linear-gradient(
+    to bottom,
+    #181818 0%,
+    #000000 95%
+  ) !important;
 }
-
-#footer:after {
-  background: radial-gradient(
-    ellipse at center,
-    rgba(149, 0, 251, 0.6) 0%,
-    rgba(255, 0, 255, 0.15) 40%,
-    rgba(195, 0, 250, 0.05) 55%,
-    rgba(244, 0, 252, 0) 70%
-  );
-}
-
 #footer li,
 #footer p,
 #footer a {
-  color: #030303;
+  color: #f8f8f8;
 }
 #index_common_stats {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(39, 39, 39);
 }
 .quickbuttons > li > a,
 .inline_mod_check {
-  color: #444;
+  color: rgb(211, 211, 211);
 }
 .moderationbuttons_check:focus {
   box-shadow: 0 0 4px #499dd8;
 }
 .post_options ul {
-  background: #fff;
-  border: solid 1px #999;
-  border-left: solid 1px #aaa;
-  border-top: solid 1px #bbb;
+  background: rgb(53, 53, 53);
+  border: solid 1px rgb(121, 121, 121);
+  border-left: solid 1px rgb(82, 81, 81);
+  border-top: solid 1px rgb(53, 53, 53);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
 }
 .post_options ul a {
   border: 1px solid transparent;
-  color: #444;
+  color: rgb(211, 210, 210);
 }
 
 .post_options ul a:hover,
 .post_options ul a:focus {
-  border-color: #c4cbd3;
+  border-color: #27292b;
 }
 #registration fieldset {
   border: none;
@@ -442,20 +481,20 @@ h1.forumtitle a {
   border-top: none;
 }
 .coppa_contact {
-  background: #fff;
-  color: #222;
+  background: rgb(53, 48, 48);
+  color: rgb(243, 237, 237);
   border: 1px solid #222;
 }
 
 .valid_input {
-  background: #f5fff0;
+  background: #141414;
 }
 
 .invalid_input {
-  background: #fff0f0;
+  background: #303030;
 }
 .errorfile_table {
-  background: #f0f4f7;
+  background: #181818;
 }
 
 .errorfile_table td.current {
@@ -551,12 +590,12 @@ h1.forumtitle a {
 
 #detailedinfo dt,
 #tracking dt {
-  color: #444;
+  color: rgb(233, 233, 233);
 }
 
 .activity_stats li span {
-  border: 1px solid #666;
-  background: #eee;
+  border: 1px solid rgb(46, 46, 46);
+  background: rgb(17, 17, 17);
 }
 
 .activity_stats li.last span {
@@ -576,13 +615,12 @@ h1.forumtitle a {
 }
 
 .list_posts {
-  border-top: 1px solid #ddd;
-  box-shadow: 0 1px 0 #fff inset;
+  border-top: 1px solid rgb(87, 87, 87);
+  box-shadow: 0 1px 0 rgb(51, 51, 51) inset;
 }
 
 .boardslist a {
-  border-bottom: 1px solid #c4c4c4;
-  -bottom: 0.5em;
+  border-bottom: 1px solid #4d4d4d;
 }
 
 .boardslist a:hover {
@@ -608,12 +646,12 @@ h1.forumtitle a {
   background-color: #f45d4c;
 }
 #personal_messages .capacity_bar {
-  background: #f0f4f7;
-  border: 1px solid #adadad;
+  background: #363636;
+  border: 1px solid #202020;
 }
 
 #personal_messages .capacity_bar span {
-  border-right: 1px solid #adadad;
+  border-right: 1px solid #3d3d3d;
 }
 
 #personal_messages .capacity_bar span.empty {
@@ -628,7 +666,7 @@ h1.forumtitle a {
   background: #f10909;
 }
 dl.addrules dt.left {
-  color: #333;
+  color: rgb(216, 216, 216);
 }
 .unread_pm {
   background: #cfc;
@@ -638,14 +676,15 @@ dl.addrules dt.left {
   box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
 }
 .tooltip {
-  color: #333;
-  background: #fff;
-  border: 1px solid #aaa;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.05) inset;
+  color: rgb(241, 238, 238);
+  background: rgb(19, 19, 19);
+  border: 1px solid rgb(26, 25, 25);
+  box-shadow: 1px 2px 4px rgba(17, 17, 17, 0.2),
+    0 0 10px rgba(0, 0, 0, 0.05) inset;
 }
 
 .popup_container {
-  background: rgba(40, 64, 80, 0.5);
+  background: rgba(22, 35, 44, 0.5);
 }
 
 .popup_window,
@@ -653,16 +692,16 @@ dl.addrules dt.left {
 #genericmenu .popup_window,
 #adm_submenus .popup_window {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-  border: 1px solid #777;
+  border: 1px solid rgb(48, 47, 47);
 }
 .popup_heading {
   color: #bf6900;
 }
 
 .popup_ {
-  color: #222;
-  border: 1px solid #bbb;
-  border-bottom: 1px solid #ddd;
+  color: rgb(235, 228, 228);
+  border: 1px solid rgb(63, 63, 63);
+  border-bottom: 1px solid rgb(46, 46, 46);
   box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.15), 0 1px 1px rgba(255, 255, 255, 0.2);
 }
 
@@ -676,38 +715,38 @@ dl.addrules dt.left {
 .windowbg,
 .approvebg,
 .approvebg2 {
-  background: #f0f4f7;
-  border: 1px solid #ddd;
-  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+  background: #121313;
+  border: 1px solid rgb(43, 43, 43);
+  box-shadow: 0 -2px 2px rgba(82, 81, 81, 0.1);
 }
 
 /* Here comes the glory... */
 .windowbg:nth-of-type(even),
 .bg.even {
-  background: #f0f4f7;
+  background: #1c1c1d;
 }
 
 .windowbg:nth-of-type(odd),
 .bg.odd {
-  background: #fdfdfd;
+  background: #161616;
 }
 
 /* Highlight the target item */
 .windowbg:target {
-  background: #ffffe0;
+  background: #333333;
 }
 tr.windowbg:hover {
-  background: #e2eef8;
+  background: #202020;
 }
 
 .windowbg.locked {
-  background: #e7eaef;
+  background: #682c4f;
 }
 .windowbg.sticky {
-  background: #cfdce8;
+  background: #6b42a0;
 }
 .windowbg.sticky.locked {
-  background: #e8d8cf;
+  background: #431463;
 }
 .windowbg.approvetopic {
   background: #e4a17c;
@@ -716,19 +755,19 @@ tr.windowbg:hover {
   background: #ffcbcb;
 }
 .generic_list_wrapper table.table_grid {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid rgb(87, 87, 87);
 }
 tr.windowbg {
   box-shadow: none;
 }
 .approvebg {
-  color: #222;
-  background: #ffeaea;
+  color: rgb(250, 250, 250);
+  background: #505050;
 }
 
 .approvebg2 {
-  color: #222;
-  background: #fff2f2;
+  color: rgb(202, 200, 200);
+  background: #333333;
 }
 #groups .windowbg {
   box-shadow: none;
@@ -782,7 +821,7 @@ tr.windowbg {
 }
 
 .info .subject {
-  color: #a85400;
+  color: #b4b1af;
 }
 
 .board_stats {
@@ -794,32 +833,32 @@ tr.windowbg {
 }
 .main_container::after,
 .main_container::before {
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 10px rgba(195, 18, 210, 0.7);
 }
 
 .up_contain {
-  border: 1px solid #ddd;
+  border: 1px solid rgb(10, 10, 10);
 }
 
 .children {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(17, 17, 17);
 }
 #info_center .sub_bar {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(34, 33, 33);
 }
 
 #info_center .sub_bar:first-child {
   border-top: none;
 }
 #ic_recentposts td {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #070707;
 }
 
 #ic_recentposts tr:first-child td {
   border-top: none;
 }
 #ic_recentposts .recenttime strong {
-  color: #555;
+  color: rgb(223, 223, 223);
 }
 
 #ic_recentposts .windowbg {
@@ -851,7 +890,7 @@ tr.windowbg {
 .poster li:hover h4 a,
 .poster h4 a:hover .poster li h4 a,
 .poster h4 a:focus {
-  color: #c06002;
+  color: #faa54f;
 }
 
 .poster li.poster_online a {
@@ -864,40 +903,40 @@ tr.windowbg {
 }
 
 .keyinfo .postinfo .modified {
-  color: #333;
+  color: rgb(231, 230, 230);
 }
 
 .subject_title a {
-  color: #333;
+  color: rgb(230, 230, 230);
 }
 
 .page_number {
-  color: #ad6825;
+  color: #ffab58;
 }
 
 .inner {
-  border-top: 1px solid #bfbfbf;
-  box-shadow: 0 1px 0 #fff inset;
+  border-top: 1px solid #414040;
+  box-shadow: 0 1px 0 rgb(22, 22, 22) inset;
 }
 #post_settings,
 #postAttachment,
 #postAttachment2,
 #attachment_previews {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(92, 92, 92);
 }
 #post_draft_options {
-  background: #fdfdfd;
-  border: 1px solid #aaa;
-  border-left: 1px solid #bbb;
+  background: #1d1d1d;
+  border: 1px solid rgb(63, 63, 63);
+  border-left: 1px solid rgb(51, 51, 51);
   border-top: none;
 }
 
 #post_draft_options .settings dd,
 #post_draft_options .settings dt {
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid #222222;
 }
 #post_draft_options .settings strong {
-  color: #555;
+  color: rgb(214, 214, 214);
 }
 
 .signature,
@@ -905,8 +944,8 @@ tr.windowbg {
 .under_message,
 .custom_fields_above_signature,
 .custom_fields_below_signature {
-  border-top: 1px solid #bfbfbf;
-  box-shadow: 0 1px 0 #fff inset;
+  border-top: 1px solid #363636;
+  box-shadow: 0 1px 0 rgb(46, 46, 46) inset;
 }
 
 .errorfile_table td {
@@ -925,10 +964,10 @@ tr.windowbg {
   background: #ececec;
 }
 div.cat_bar {
-  background: #557ea0;
-  border-bottom: 1px solid #777;
-  box-shadow: 0 16px 20px rgba(255, 255, 255, 0.15) inset;
-  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
+  background: var(--div_catbar);
+  border-bottom: 1px solid rgb(63, 63, 63);
+  box-shadow: 0 16px 20px rgba(68, 68, 68, 0.15) inset;
+  text-shadow: -1px -1px 1px rgba(44, 44, 44, 0.2);
 }
 .cat_bar .desc {
   color: #fff;
@@ -953,74 +992,47 @@ h3.catbg a:hover {
 }
 
 .main_container:nth-child(10n) div.cat_bar {
-  background: linear-gradient(
-    90deg,
-    rgba(103, 68, 1, 1) 0%,
-    rgba(121, 86, 9, 1) 35%,
-    rgba(255, 149, 0, 1) 100%
-  );
+  background: var(--nth_chi10);
 }
 
 .main_container:nth-child(9) div.cat_bar {
-  background: linear-gradient(
-    90deg,
-    rgba(103, 1, 1, 1) 0%,
-    rgba(121, 9, 9, 1) 35%,
-    rgba(255, 0, 0, 1) 100%
-  );
+  background: var(--nth_chi9);
 }
 
 .main_container:nth-child(8) div.cat_bar {
-  background: linear-gradient(
-    90deg,
-    rgba(22, 103, 1, 1) 0%,
-    rgba(9, 121, 12, 1) 35%,
-    rgba(39, 255, 0, 1) 100%
-  );
+  background: var(--nth_chi8);
 }
 
 .main_container:nth-child(7) div.cat_bar {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: var(--nth_chi7);
 }
 
 .main_container:nth-child(6) div.cat_bar {
-  background: linear-gradient(to left, #72e6bf, #72d3e6);
+  background: var(--nth_chi6);
 }
 
 .main_container:nth-child(5) div.cat_bar {
-  background: linear-gradient(to left, #99e672, #72e685);
+  background: var(--nth_chi5);
 }
 
 .main_container:nth-child(4) div.cat_bar {
-  background: linear-gradient(to left, #e6bf72, #d3e672);
+  background: var(--nth_chi4);
 }
 
 .main_container:nth-child(3) div.cat_bar {
-  background: linear-gradient(to left, #e67299, #e68572);
+  background: var(--nth_chi3);
 }
 
 .main_container:nth-child(2) div.cat_bar {
-  background: linear-gradient(to left, #bf72e6, #e672d3);
+  background: var(--nth_chi2);
 }
 
 .main_container:nth-child(1) div.cat_bar {
-  background: linear-gradient(to left, #7299e6, #8572e6);
+  background: var(--nth_chi1);
 }
 
 div.cat_bar:nth-child(n) {
-  background: linear-gradient(
-    45deg,
-    rgba(204, 0, 255, 1) 0%,
-    rgba(99, 1, 143, 1) 33%,
-    rgba(205, 87, 215, 1) 50%,
-    rgba(99, 1, 143, 1) 66%,
-    rgba(243, 0, 255, 1) 100%
-  );
+  background: var(--cat_bar);
 }
 
 div.cat_bar {
@@ -1028,7 +1040,7 @@ div.cat_bar {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
 }
 .cat_bar .desc {
-  color: #000;
+  color: rgb(199, 199, 199);
 }
 
 h3.catbg {
@@ -1054,20 +1066,20 @@ h3.catbg a:hover {
   );
 }
 .roundframe {
-  background: #f8f8f8;
-  border: 1px solid #c5c5c5;
-  box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+  background: #303030;
+  border: 1px solid #2e2e2e;
+  box-shadow: 0 -2px 2px rgba(83, 83, 83, 0.1);
 }
 .title_bar {
-  border: 1px solid #ddd;
-  border-top: 2px solid #ff9400;
-  border-bottom: 2px solid #bf6900;
-  background: #fff;
-  color: #666;
+  border: 1px solid rgb(71, 71, 71);
+  border-top: 2px solid #ff00dd;
+  border-bottom: 2px solid #af00bf;
+  background: rgb(0, 0, 0);
+  color: rgb(238, 238, 238);
 }
 
 .sub_bar {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(71, 71, 71);
   text-shadow: none;
   background: none;
   box-shadow: 0 -1px 0 #999 inset;
@@ -1080,14 +1092,14 @@ h3.subbg,
 h4.subbg,
 .subbg {
   background: none;
-  color: #555;
+  color: rgb(211, 211, 211);
   text-shadow: none;
 }
 
 .titlebg a,
 .subbg a {
   background: none;
-  color: #555;
+  color: rgb(211, 211, 211);
 }
 
 .title_bar + .windowbg,
@@ -1096,10 +1108,10 @@ h4.subbg,
   border-top-right-radius: 0;
 }
 .information {
-  background-color: #fff;
-  border: 1px solid #e3e6f0;
-  border-left-color: #e3e6f0;
-  border-left-color: #ea1ef0;
+  background-color: rgb(54, 54, 54);
+  border: 1px solid #3b3b3b;
+  border-left-color: #424242;
+  border-left-color: #7a007e;
 }
 
 .generic_list_wrapper .information div {
@@ -1107,12 +1119,12 @@ h4.subbg,
 }
 #topic_icons .information,
 #messageindex .information {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(44, 44, 44);
 }
 .atwho-view {
-  background: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: rgb(48, 48, 48);
+  border: 1px solid rgb(39, 39, 39);
+  box-shadow: 0 0 5px rgba(82, 82, 82, 0.1);
 }
 
 .atwho-view .cur {
@@ -1175,28 +1187,28 @@ h4.subbg,
 .post_options ul a:focus,
 .notify_dropdown a:hover,
 .notify_dropdown a:focus {
-  background: #fff;
-  background-image: linear-gradient(#e2e9f3 0%, #fff 70%);
+  background: rgb(0, 0, 0);
+  background-image: var(--top_menu);
 }
 .button:hover,
 #search_form .button:hover,
 .quickbuttons li:hover {
-  background: #fff;
-  background-image: linear-gradient(to bottom, #fff 0%, #e2e9f3 70%);
+  background: rgb(0, 0, 0);
+  background-image: var(--button_hover);
 }
 .navigate_section ul,
 .popup_content,
 .up_contain {
-  background: #fff;
-  background-image: linear-gradient(to bottom, #fff 0%, #f1f3f5 95%);
+  background: rgb(6, 6, 6);
+  background-image: var(--up_contain);
 }
 
 .notify_dropdown a:hover,
 .notify_dropdown a:focus {
-  border-color: #ddd;
+  border-color: rgb(20, 20, 20);
 }
 #_head p {
-  color: #959595;
+  color: #e9e5e5;
 }
 
 #reported_posts .quickbuttons li a,
@@ -1219,23 +1231,23 @@ h4.subbg,
   color: green;
 }
 .stripes:nth-of-type(even) {
-  background-color: #f2f2f2;
+  background-color: #797979;
 }
 
 .stripes:nth-of-type(odd) {
-  background-color: #f0f4f7;
+  background-color: #8d8d8d;
 }
 
 .alternative {
-  background-color: #f2f2f2;
+  background-color: #646464;
 }
 
 .alternative2 {
-  background-color: #e8edf0;
+  background-color: #464646;
 }
 
 .tfacode {
-  background: #d0e7f8;
+  background: #3c617e;
 }
 
 .videocontainer video {
@@ -1243,32 +1255,32 @@ h4.subbg,
 }
 
 .backtrace:not(:last-child) {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(26, 24, 24);
 }
 
 .rounded {
-  background: #ef00fc;
+  background: #383838;
 }
 .rounded li > a {
   color: #fff;
 }
 
 .garipstyle {
-  border: 2px solid #dc00ed !important;
+  border: 2px solid #530158 !important;
 }
 
 .garipstyle .avatar {
-  background: #fff;
-  border: 4px solid #d800ea;
+  background: rgb(0, 0, 0);
+  border: 4px solid #400046;
 }
 .hovercard .hovercard-box .hovercard-body {
-  background: #fff;
+  background: rgb(2, 2, 2);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.1),
     0 0 0 1px rgba(0, 0, 0, 0.07);
 }
 
 .hovercard .hovercard-arrow {
-  background: #fff;
+  background: rgb(2, 2, 2);
   border-color: rgba(0, 0, 0, 0.12);
   border-style: solid;
   border-bottom: 0;
@@ -1276,22 +1288,22 @@ h4.subbg,
 }
 
 .hovercard-body div.avatar {
-  background: #fff;
+  background: rgb(0, 0, 0);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 4px 5px rgba(0, 0, 0, 0.1),
     0 0 0 1px rgba(0, 0, 0, 0.07);
 }
 
 .snrjpostbit .poster {
-  background: #f5f5f5;
-  border-right: 1px solid #d8d8d8;
+  background: #130a10;
+  border-right: 1px solid #292929;
 }
 
 .snrjpostbit:nth-of-type(odd) .postarea::before {
-  background: #fdfdfd;
+  background: #161616;
 }
 
 .snrjpostbit:nth-of-type(even) .postarea::before {
-  background: #f0f4f7;
+  background: #1c1c1d;
 }
 
 .snrjpostbit .postarea::before {
@@ -1300,11 +1312,42 @@ h4.subbg,
   border-bottom-color: rgba(0, 0, 0, 0.12);
 }
 .card-header {
-  background-color: #f8f9fc;
-  border-bottom: 1px solid #e3e6f0;
+  background-color: #141414;
+  border-bottom: 1px solid #242424;
 }
 .card {
-  background-color: #fff;
+  background-color: rgb(5, 5, 5);
   background-clip: border-box;
-  border: 1px solid #e3e6f0;
+  border: 1px solid #1f1f1f;
+}
+.card.shadow {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(142, 0, 154, 0.15) !important;
+}
+.dropdown-menu {
+  color: #b9b9b9 !important;
+  background-color: #0e0e0e !important;
+  border: 1px solid #323233 !important;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff00ff #000000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff00ff;
+  border-radius: 5px;
+  border: 8px solid #ff00ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
