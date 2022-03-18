@@ -4778,7 +4778,7 @@ img.theme_thumbnail {
 .wrap > #checking:checked ~ .blob:nth-child(3) {
   margin-top: -91px;
   margin-left: -33px;
-  background-color: #fff;
+  background-color: #000;
 }
 
 .wrap > #checking:checked ~ .blob:nth-child(4) {
