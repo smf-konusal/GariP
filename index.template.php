@@ -81,7 +81,7 @@ function template_init()
 	if (!isset($settings['disable_files']))
 		$settings['disable_files'] = array();
 
-		$settings['theme_variants'] = array('1','2','3','4','5', '6');
+		$settings['theme_variants'] = array('1','2','3','4','5');
 }
 
 /**
@@ -788,7 +788,7 @@ function template_button_strip($button_strip, $direction = '', $strip_options = 
 				$value['id'] = $key;
 
 			$button = '
-				<a class="button button_strip_' . $key . (!empty($value['active']) ? ' active' : '') . (isset($value['class']) ? ' ' . $value['class'] : '') . '" ' . (!empty($value['url']) ? 'href="' . $value['url'] . '"' : '') . ' ' . (isset($value['custom']) ? ' ' . $value['custom'] : '') . '>'.(!empty($value['icon']) ? '<span class="main_icons '.$value['icon'].'"></span>' : '').'' . $txt[$value['text']] . '</a>';
+				<a class="button button_strip_' . $key . (!empty($value['active']) ? ' active' : '') . (isset($value['class']) ? ' ' . $value['class'] : '') . '" ' . (!empty($value['url']) ? 'href="' . $value['url'] . '"' : '') . ' ' . (isset($value['custom']) ? ' ' . $value['custom'] : '') . '>'.(!empty($value['icon']) ? '<span class="main_icons '.$value['icon'].'"></span>' : '<span class="main_icons '.$key.'"></span> ').'' . $txt[$value['text']] . '</a>';
 
 			if (!empty($value['sub_buttons']))
 			{

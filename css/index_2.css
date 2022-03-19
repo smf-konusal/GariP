@@ -357,7 +357,10 @@ a.moderation_link:visited {
 .dropmenu li li.subsections > a::after {
   font: 83.33% Arial, sans-serif;
 }
-
+ul.konusal > li {
+  border: 1px solid #4a4749;
+  background-image: linear-gradient(to bottom, rgb(22, 21, 21) 0%, #363636 95%);
+}
 .button,
 .quickbuttons > li > a,
 .inline_mod_check {
@@ -383,21 +386,23 @@ a.moderation_link:visited {
 
 .button:hover,
 .button:focus {
-  color: #fc9d19;
+  color: #bdbdbd;
 }
 .button.active {
   background: #2b2b2b;
   color: #fff;
-  border: 1px solid #71019a;
+  border: 1px solid #484848;
   text-shadow: 0 0 1px #000;
 }
 
 .button.active:hover,
 .button.active:focus {
-  color: #ffc187;
-  background: #000000;
+  color: #a3a3a3;
+  background: #202020;
   box-shadow: none;
 }
+
+
 .bg-white {
   background-image: linear-gradient(to bottom, rgb(8, 8, 8) 0%, #171717 95%);
 }
@@ -1356,3 +1361,4 @@ h4.subbg,
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
