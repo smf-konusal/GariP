@@ -1334,3 +1334,27 @@ h4.subbg,
   background-clip: border-box;
   border: 1px solid #e3e6f0;
 }
+.wrap .blob {background-color: #f436c5;}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff00ff #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff00ff;
+  border-radius: 5px;
+  border: 8px solid #ff00ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

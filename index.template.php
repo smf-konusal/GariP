@@ -467,7 +467,7 @@ function template_body_below()
  */
 function template_html_below()
 {
-	
+	global $settings;
 	echo'<script>(function($) {
   "use strict"; // Start of use strict
 
@@ -525,7 +525,9 @@ function template_html_below()
   });
 
 })(jQuery); // End of use strict
-</script><svg class="grovmenu">
+</script>';
+if(empty($settings['disable_user_variant'])){
+echo'<svg class="grovmenu">
 <defs>
   <filter id="filt">
 	<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
@@ -547,6 +549,7 @@ function template_html_below()
   <span class="bar"></span> 
 </label>
 </div>';
+}
 	// Load in any javascipt that could be deferred to the end of the page
 	template_javascript(true);
 	echo '
