@@ -1,54 +1,48 @@
-:root{
-  --renklendir: linear-gradient(
-      45deg,
-      #302120 0%,
-      #e6d6d3 33%,
-      #302120 50%,
-      #4b3c3b 66%,
-      #302120 100%
-    );
-  --cat_bar :linear-gradient(
-      45deg,
-      #302120 0%,
-      #e6d6d3 33%,
-      #302120 50%,
-      #4b3c3b 66%,
-      #302120 100%
-    );
-  --nth_chi1:linear-gradient(to left, #302120, #4b3c3b);
-  --nth_chi2:linear-gradient(to left, #4b3c3b, #302120);
-  --nth_chi3:linear-gradient(to left, #e6d6d3, #4b3c3b);
-  --nth_chi4:linear-gradient(to left, #302120, #e6d6d3);
-  --nth_chi5:linear-gradient(to left, #99e672, #72e685);
-  --nth_chi6:linear-gradient(to left, #72e6bf, #72d3e6);
-  --nth_chi7:linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
-  --nth_chi8:linear-gradient(
-      90deg,
-      rgba(22, 103, 1, 1) 0%,
-      rgba(9, 121, 12, 1) 35%,
-      rgba(39, 255, 0, 1) 100%
-    );
-  --nth_chi9:linear-gradient(
-      90deg,
-      rgba(103, 1, 1, 1) 0%,
-      rgba(121, 9, 9, 1) 35%,
-      rgba(255, 0, 0, 1) 100%
-    );
-  --nth_chi10:linear-gradient(
-      90deg,
-      rgba(103, 68, 1, 1) 0%,
-      rgba(121, 86, 9, 1) 35%,
-      rgba(255, 149, 0, 1) 100%
-    );
-  
-  --up_contain:linear-gradient(to bottom, #e6d6d3 0%, #f1e7e4 95%);
-  --button_hover:linear-gradient(to bottom, #e6d6d3 0%, #4b3c3b 70%);
-  --top_menu:linear-gradient(#4b3c3b 0%, #f1e7e4 70%);
-  --div_catbar:#557ea0;
-  }
-  .wrap .blob {background-color: rgb(232, 218, 215);}
+:root {
+  --renklendir: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --cat_bar: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --nth_chi1: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --nth_chi2: linear-gradient(to bottom, #679001 0%, #7dad04 100%);
+  --nth_chi3: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --nth_chi4: linear-gradient(to bottom, #679001 0%, #7dad04 100%);
+  --nth_chi5: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --nth_chi6: linear-gradient(to bottom, #679001 0%, #7dad04 100%);
+  --nth_chi7: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --nth_chi8: linear-gradient(to bottom, #679001 0%, #7dad04 100%);
+  --nth_chi9: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+  --nth_chi10: linear-gradient(to bottom, #679001 0%, #7dad04 100%);
+
+  --up_contain: linear-gradient(to bottom, #e7f5de 0%, #e9f1e4 95%);
+  --button_hover: linear-gradient(to bottom, #e7f5de 0%, #e9f1e4 95%);
+  --top_menu: linear-gradient(to bottom, #e7f5de 0%, #e9f1e4 95%);
+  --div_catbar: #4baa4b;
+}
+
+#footer,
+.bg-white {
+  background-color: #679001 !important;
+  background: linear-gradient(to bottom, #7dad04 0%, #679001 100%);
+}
+.rounded {
+  background: #377207;
+}
+#footer {
+  border-image: linear-gradient(
+    to right,
+    #eeeaeb 0%,
+    #fce734 50%,
+    #e8e8eb 100%
+  );
+}
+#footer::after {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(67, 251, 0, 0.6) 0%,
+    rgba(68, 255, 0, 0.15) 40%,
+    rgba(90, 250, 0, 0.05) 55%,
+    rgba(43, 252, 0, 0) 70%
+  );
+}
+.wrap .blob {
+  background-color: rgb(51, 233, 96);
+}

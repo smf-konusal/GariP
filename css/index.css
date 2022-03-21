@@ -4730,13 +4730,17 @@ img.theme_thumbnail {
   position: absolute;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: 0% 50% 50% 50%;
   z-index: 10;
   box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
   -webkit-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
   -moz-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
   -o-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
   -ms-box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.3) inset;
+  -webkit-border-radius: 0% 50% 50% 50%;
+  -moz-border-radius: 0% 50% 50% 50%;
+  -ms-border-radius: 0% 50% 50% 50%;
+  -o-border-radius: 0% 50% 50% 50%;
 }
 .wrap .blob {background-color: #f436c5;}
 
@@ -4764,7 +4768,7 @@ img.theme_thumbnail {
   -ms-transition: all 0.5s ease-in-out;
 }
 .wrap .blob:not([for="checking"]):hover {
-  color: #f44336;
+  color: rgb(244, 67, 54);
   animation: harlem 0.5s linear forwards;
   -webkit-animation: harlem 0.5s linear forwards;
   -moz-animation: harlem 0.5s linear forwards;
@@ -4775,18 +4779,18 @@ img.theme_thumbnail {
 .wrap > #checking:checked ~ .blob:nth-child(2) {
   margin-top: -99px;
   margin-left: 6px;
-  background-color: #e134ef;
+  background-color: rgb(237, 13, 253);
 }
 .wrap > #checking:checked ~ .blob:nth-child(3) {
   margin-top: -91px;
   margin-left: -33px;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
 
 .wrap > #checking:checked ~ .blob:nth-child(4) {
   margin-top: -66px;
   margin-left: -66px;
-  background-color: rgb(232, 218, 215);
+  background-color: rgb(44, 255, 2);
 }
 .wrap > #checking:checked ~ .blob:nth-child(5) {
   margin-top: -33px;
@@ -4796,7 +4800,7 @@ img.theme_thumbnail {
 .wrap > #checking:checked ~ .blob:nth-child(6) {
   margin-top: 10px;
   margin-left: -90px;
-  background-color: #fff;
+  background-color: rgb(77, 58, 58);
 }
 .wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(1) {
   transform: rotate(45deg);

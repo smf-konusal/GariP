@@ -402,7 +402,6 @@ ul.konusal > li {
   box-shadow: none;
 }
 
-
 .bg-white {
   background-image: linear-gradient(to bottom, rgb(8, 8, 8) 0%, #171717 95%);
 }
@@ -1338,7 +1337,9 @@ h4.subbg,
   background-color: #0e0e0e !important;
   border: 1px solid #323233 !important;
 }
-.wrap .blob {background-color: #000000;}
+.wrap .blob {
+  background-color: rgb(0, 0, 0);
+}
 * {
   scrollbar-width: thin;
   scrollbar-color: #ff00ff #000000;
@@ -1362,4 +1363,3 @@ h4.subbg,
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-

@@ -1178,26 +1178,35 @@ h4.subbg,
 .notify_dropdown a:focus {
   background: #a9e3f9;
   background-image: linear-gradient(to bottom, #eaf3ff 0%, #bedaf7 95%);
-  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px, rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px, rgba(2, 42, 61, 0.03) 0px 32px 16px;
- 
+  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px,
+    rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px,
+    rgba(2, 42, 61, 0.03) 0px 32px 16px;
 }
 .button:hover,
 #search_form .button:hover,
 .quickbuttons li:hover {
   background: #a9e3f9;
   background-image: linear-gradient(to bottom, #bedaf7 0%, #eaf3ff 95%);
-  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px, rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px, rgba(2, 42, 61, 0.03) 0px 32px 16px;
- 
+  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px,
+    rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px,
+    rgba(2, 42, 61, 0.03) 0px 32px 16px;
 }
 .navigate_section ul,
 .popup_content,
 .up_contain {
   background: #a9e3f9;
   background-image: linear-gradient(to bottom, #eaf3ff 0%, #bedaf7 95%);
-  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px, rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px, rgba(2, 42, 61, 0.03) 0px 32px 16px;
+  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px,
+    rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px,
+    rgba(2, 42, 61, 0.03) 0px 32px 16px;
   margin-bottom: 10px;
 }
-
+ul.konusal > li {
+  box-shadow: rgba(4, 55, 91, 0.35) 0px 2px 1px, rgba(0, 0, 0, 0.28) 0px 4px 2px,
+    rgba(6, 38, 79, 0.16) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px,
+    rgba(2, 42, 61, 0.03) 0px 32px 16px;
+  background-image: linear-gradient(to bottom, #eaf3ff 0%, #bedaf7 95%);
+}
 .notify_dropdown a:hover,
 .notify_dropdown a:focus {
   border-color: #ddd;
@@ -1315,7 +1324,9 @@ h4.subbg,
   background-clip: border-box;
   border: 1px solid #e3e6f0;
 }
-.wrap .blob {background-color: rgb(4, 144, 234);}
+.wrap .blob {
+  background-color: rgb(4, 144, 234);
+}
 * {
   scrollbar-width: thin;
   scrollbar-color: #0099ff #ffffff;
