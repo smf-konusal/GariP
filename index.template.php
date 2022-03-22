@@ -707,8 +707,8 @@ function template_menu()
 							</li>
 							<li class="text-center d-none d-md-inline">
                 				<button class="rounded-circle border-0" id="sidebarToggle"></button>
-            				</li>
-        </ul>';
+            				</li>';
+       echo' </ul>';
 }
 function template_menu2()
 {
