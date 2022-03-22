@@ -12,12 +12,11 @@ global $settings;
 
 // argument(s): images_url as saved in settings
 $txt['theme_thumbnail_href'] = '%1$s/thumbnail.png';
-$txt['theme_description'] = 'Html5, responsive, css sprite icon <br /><br />Smf.konusal.com <a href="http://smf.konusal.com">Smf Destek</a>';
+$txt['theme_description'] = 'Html5, bootstrap, fontawesome icon <br /><br />Smf.konusal.com <a href="http://smf.konusal.com">Smf Destek</a>';
 $txt['menubasliklabel']= 'Menu Başlığını burdan değiştirebilirsiniz';
 $txt['snrjmenu2'] = 'Menü Şeçimi';
 $txt['snrjmenuyatay'] = 'Yatay Menü';
 $txt['snrjmenudikey'] = 'Dikey Menü';
-$txt['anapost'] = 'Varsayılan 20 dir Farklı bir sayı girebilirsiniz';
 $txt['snrjfooter'] = 'Footer Alanı Aç';
 $txt['snrjhakkindabaslik'] = 'Hakkında';
 $txt['snrjlinkbaslik'] = 'Link Başlık';

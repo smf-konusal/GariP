@@ -12,12 +12,11 @@ global $settings;
 
 // argument(s): images_url as saved in settings
 $txt['theme_thumbnail_href'] = '%1$s/thumbnail.png';
-$txt['theme_description'] = 'Html5, responsive, css sprite icon <br /><br />Smf.konusal.com <a href="http://smf.konusal.com">Smf Destek</a>';
-$txt['menubasliklabel']= 'Menu Başlığını burdan değiştirebilirsiniz';
-$txt['snrjmenu2'] = 'Menü Şeçimi';
-$txt['snrjmenuyatay'] = 'Yatay Menü';
-$txt['snrjmenudikey'] = 'Dikey Menü';
-$txt['anapost'] = 'Default is 20. You can enter a different number';
+$txt['theme_description'] = 'Html5, bootstrap, fontawesome icon <br /><br />Smf.konusal.com <a href="http://smf.konusal.com">Smf Destek</a>';
+$txt['menubasliklabel']= 'You can change the Menu Title here';
+$txt['snrjmenu2'] = 'Menu selection';
+$txt['snrjmenuyatay'] = 'Horizontal Menu';
+$txt['snrjmenudikey'] = 'Vertical Menu';
 $txt['snrjfooter'] = 'Footer enabled';
 $txt['snrjhakkindabaslik'] = 'About';
 $txt['snrjlinkbaslik'] = 'Link Title';
