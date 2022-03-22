@@ -1317,20 +1317,20 @@ ul.konusal > li,
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: #0099ff #ffffff;
+  scrollbar-color: #42484d #ffffff;
 }
 *::-webkit-scrollbar {
   width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #000000;
+  background: #fff;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #0099ff;
+  background-color: #42484d;
   border-radius: 5px;
-  border: 8px solid #0099ff;
+  border: 8px solid #42484d;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;

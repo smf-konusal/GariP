@@ -1180,6 +1180,10 @@ a[class^="mobile_generic_menu_"] {
   margin: 0 0 6px 0;
   overflow: hidden;
 }
+button i.main_icons{
+  margin: -9px 0 0 0;
+  vertical-align: middle;
+}
 ul.konusal {
   float: right;
   position: relative;

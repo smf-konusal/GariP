@@ -226,7 +226,8 @@ function template_body_above()
 			echo '<div id="content-wrapper" class="d-flex flex-column">';
 			}
 			echo'
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
+				
                    ',!empty($settings['snrjmenu2']) ? '<a class="mobile_user_menu smenu"><span class="main_icons bars"></span></a>' : ' <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3"><i class="main_icons bars"></i></button> ','';
 				if ($context['allow_search'])
 				{
@@ -358,11 +359,25 @@ function template_body_above()
 
 
 				 echo'    
-					</ul>
-				</nav>';
+					</ul>				
+				<button type="button" class="btn" data-toggle="collapse" data-target="#linktree"><i class="main_icons list"></i></button>
+				</nav>
+				<div id="linktree" class="collapse">
+				',theme_linktree(),'';
+
+				if (!empty($settings['enable_news']) && !empty($context['random_news_line']))
+					echo ' 
+						<div class="card p-3">
+								<div class="card-body">
+									<p class="text-center mb-2">', $context['random_news_line'], '</p>
+								</div>
+						</div>';
+			
+				echo '
+			  </div>';
 				
 	echo '
-	<div id="header">
+	<div id="header" class="mt-4">
 		<h1 class="forumtitle">
 			<a id="top" href="', $scripturl, '">', empty($context['header_logo_url_html_safe']) ? $context['forum_name_html_safe'] : '<img src="' . $context['header_logo_url_html_safe'] . '" alt="' . $context['forum_name_html_safe'] . '">', '</a>
 		</h1>';
@@ -689,20 +704,10 @@ function template_menu()
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="', $scripturl, '?action=unreadreplies" title="', $txt['show_unread_replies'], '">', $txt['unread_replies'], '</a>
-							</li>';
-
-	if (!empty($settings['enable_news']) && !empty($context['random_news_line']))
-		echo ' 
-			<li class="sidebar-haberler-yok-et"><hr class="sidebar-divider">
-				<div class="sidebar-heading">', $txt['news'], '</div>
-					<div class="sidebar-card d-none d-lg-flex">
-						<pc lass="text-center mb-2">', $context['random_news_line'], '</p>
-					</div>
-			</li>';
-
-	echo '<li class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </li>
+							</li>
+							<li class="text-center d-none d-md-inline">
+                				<button class="rounded-circle border-0" id="sidebarToggle"></button>
+            				</li>
         </ul>';
 }
 function template_menu2()
