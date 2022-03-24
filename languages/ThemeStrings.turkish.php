@@ -3,12 +3,12 @@
  * @package GariP
  * @version 1.0
  * @theme GariP
- * @author Snrj and cee山 - http://smf.web.tr
+ * @author Snrj and cee山 - https://smf.web.tr
  * Copyright 2022 GariP
  *
  */
 
-$txt['themecop']='<span class="smalltext"><span class="main_icons current_theme"></span> Theme Designer <a href="http://smf.web.tr/" title="smf theme" target="_blank">Smf.web.tr</a></span>';
+$txt['themecop']='<span class="smalltext"><span class="main_icons current_theme"></span> Theme Designer <a href="https://smf.web.tr/" title="smf theme" target="_blank">Smf.web.tr</a></span>';
 $txt['welcome_to_forum'] = '';
 $txt['menubaslik'] = 'GariP Theme';
 $txt['snrjfootertext1'] = 'Hakkımızda';

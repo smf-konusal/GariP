@@ -4,7 +4,7 @@
  * @package GariP
  * @version 1.0
  * @theme GariP
- * @author Snrj and cee山 - http://smf.web.tr
+ * @author Snrj and cee山 - https://smf.web.tr
  * Copyright 2022 GariP
  *
  */
