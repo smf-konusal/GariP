@@ -1,1 +1,20 @@
-<?php /** * @package GariP * @version 1.0 * @theme GariP * @author Snrj and cee山 - http://smf.konusal.com * Copyright 2022 GariP * */$txt['themecop']='<span class="smalltext"><span class="main_icons current_theme"></span> Theme by <a href="http://smf.konusal.com/" title="smf destek" target="_blank">Smf Destek</a></span>';$txt['welcome_to_forum'] = '';$txt['menubaslik'] = 'GariP Theme';$txt['snrjfootertext1'] = 'Hakkımızda';$txt['snrjfootertext2'] = 'Hakkımızda içeriğinin buluncağı alandır. Bu alanı Admin panelden düzeltebilirsiniz';$txt['snrjfootertext3'] = 'Link Başlıkları';$txt['snrjfootertext4'] = 'Linkim';$txt['snrjfootertext5'] = 'Bilgi Başlığı';$txt['snrjfootertext6'] = 'Bilgi İçeriği';?>
+<?php
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.web.tr
+ * Copyright 2022 GariP
+ *
+ */
+
+$txt['themecop']='<span class="smalltext"><span class="main_icons current_theme"></span> Theme Designer <a href="http://smf.web.tr/" title="smf theme" target="_blank">Smf.web.tr</a></span>';
+$txt['welcome_to_forum'] = '';
+$txt['menubaslik'] = 'GariP Theme';
+$txt['snrjfootertext1'] = 'Hakkımızda';
+$txt['snrjfootertext2'] = 'Hakkımızda içeriğinin buluncağı alandır. Bu alanı Admin panelden düzeltebilirsiniz';
+$txt['snrjfootertext3'] = 'Link Başlıkları';
+$txt['snrjfootertext4'] = 'Linkim';
+$txt['snrjfootertext5'] = 'Bilgi Başlığı';
+$txt['snrjfootertext6'] = 'Bilgi İçeriği';
+?>

@@ -9,7 +9,14 @@
  *
  * @version 2.1.0
  */
-
+ /**
+ * @package GariP
+ * @version 1.0
+ * @theme GariP
+ * @author Snrj and cee山 - http://smf.web.tr
+ * Copyright 2022 GariP
+ *
+ */
 /**
  * This pseudo-template defines all the theme options
  */

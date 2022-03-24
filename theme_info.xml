@@ -11,7 +11,7 @@
 <!-- Author: your email address or contact information. The name attribute is optional. -->
 <author name="Snrj">snrj35@gmail.com</author>
 <!-- Website... where to get updates and more information. -->
-<website>https://smf.konusal.com/</website>
+<website>https://smf.web.tr/</website>
 <!-- Template layers to use, defaults to "html,body". -->
 <layers>html,body</layers>
 <!-- Templates to load on startup. Default is "index". -->
