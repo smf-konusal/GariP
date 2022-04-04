@@ -98,7 +98,9 @@ a.new_posts {
   background: linear-gradient(#f97b00, #884d00);
   color: #fff;
 }
-
+.smenu {
+  color: #f4f4f4;
+}
 a.new_posts:visited {
   color: #fff;
 }
