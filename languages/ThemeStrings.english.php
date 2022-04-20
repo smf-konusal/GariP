@@ -17,4 +17,9 @@ $txt['snrjfootertext3'] = 'Link Headers';
 $txt['snrjfootertext4'] = 'my link';
 $txt['snrjfootertext5'] = 'Information Title';
 $txt['snrjfootertext6'] = 'Information Content';
+$txt['variant_default'] = 'Default';
+$txt['variant_black'] = 'Black';
+$txt['variant_green'] = 'Green';
+$txt['variant_blue'] = 'blue';
+$txt['variant_brown'] = 'Brown';
 ?>

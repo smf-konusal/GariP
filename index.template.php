@@ -81,7 +81,7 @@ function template_init()
 	if (!isset($settings['disable_files']))
 		$settings['disable_files'] = array();
 
-		$settings['theme_variants'] = array('1','2','3','4','5');
+		$settings['theme_variants'] = array('default','black','green','blue','brown');
 }
 
 /**
@@ -98,6 +98,8 @@ function template_html_above()
 	<meta charset="', $context['character_set'], '">';
 	loadCSSFile('bootstrap.min.css', array('minimize' => true));
 	loadJavascriptFile('bootstrap.min.js', array('minimize' => true));
+	loadJavascriptFile('menu.js', array('minimize' => true,'defer' => true));
+
 	/*
 		You don't need to manually load index.css, this will be set up for you.
 		Note that RTL will also be loaded for you.
@@ -483,64 +485,7 @@ function template_body_below()
 function template_html_below()
 {
 	global $settings;
-	echo'<script>(function($) {
-  "use strict"; // Start of use strict
 
-  // Toggle the side navigation
-  $("#sidebarToggle, #sidebarToggleTop").on(\'click\', function(e) {
-    $("body").toggleClass("sidebar-toggled");
-    $(".sidebar").toggleClass("toggled");
-    $(".sidebar-haberler-yok-et").toggleClass("display_none");
-    if ($(".sidebar").hasClass("toggled")) {
-      $(\'.sidebar .collapse\').collapse(\'hide\');
-    };
-  });
-
-  // Close any open menu accordions when window is resized below 768px
-  $(window).resize(function() {
-    if ($(window).width() < 768) {
-      $(\'.sidebar .collapse\').collapse(\'hide\');
-    };
-    
-    // Toggle the side navigation when window is resized below 480px
-    if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
-      $("body").addClass("sidebar-toggled");
-      $(".sidebar").addClass("toggled");
-      $(\'.sidebar .collapse\').collapse(\'hide\');
-    };
-  });
-
-  // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
-  $(\'body.fixed-nav .sidebar\').on(\'mousewheel DOMMouseScroll wheel\', function(e) {
-    if ($(window).width() > 768) {
-      var e0 = e.originalEvent,
-        delta = e0.wheelDelta || -e0.detail;
-      this.scrollTop += (delta < 0 ? 1 : -1) * 30;
-      e.preventDefault();
-    }
-  });
-
-  // Scroll to top button appear
-  $(document).on(\'scroll\', function() {
-    var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
-      $(\'.scroll-to-top\').fadeIn();
-    } else {
-      $(\'.scroll-to-top\').fadeOut();
-    }
-  });
-
-  // Smooth scrolling using jQuery easing
-  $(document).on(\'click\', \'a.scroll-to-top\', function(e) {
-    var $anchor = $(this);
-    $(\'html, body\').stop().animate({
-      scrollTop: ($($anchor.attr(\'href\')).offset().top)
-    }, 1000, \'easeInOutExpo\');
-    e.preventDefault();
-  });
-
-})(jQuery); // End of use strict
-</script>';
 if(empty($settings['disable_user_variant'])){
 echo'<svg class="grovmenu">
 <defs>
@@ -553,11 +498,11 @@ echo'<svg class="grovmenu">
 </svg>
 <div class="wrap">
 <input type="checkbox" id="checking" style="display:none;" />
-<a class="blob" href="?variant=1"><span class="main_icons current_theme"></span></a>
-<a class="blob" href="?variant=2"><span class="main_icons current_theme"></span></a>
-<a class="blob" href="?variant=3"><span class="main_icons current_theme"></span></a>
-<a class="blob" href="?variant=4"><span class="main_icons current_theme"></span></a>
-<a class="blob" href="?variant=5"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=default"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=black"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=green"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=blue"><span class="main_icons current_theme"></span></a>
+<a class="blob" href="?variant=brown"><span class="main_icons current_theme"></span></a>
 <label class="blob" for="checking"> 
   <span class="bar"></span> 
   <span class="bar"></span> 

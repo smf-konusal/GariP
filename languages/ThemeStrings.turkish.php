@@ -17,4 +17,9 @@ $txt['snrjfootertext3'] = 'Link Başlıkları';
 $txt['snrjfootertext4'] = 'Linkim';
 $txt['snrjfootertext5'] = 'Bilgi Başlığı';
 $txt['snrjfootertext6'] = 'Bilgi İçeriği';
+$txt['variant_default'] = 'Default';
+$txt['variant_black'] = 'Siyah';
+$txt['variant_green'] = 'Yeşil';
+$txt['variant_blue'] = 'Mavi';
+$txt['variant_brown'] = 'Kahverengi';
 ?>
