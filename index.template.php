@@ -581,7 +581,7 @@ function template_menu()
 {
 	global $context,$settings,$txt,$scripturl;
 
-	echo '<ul class="navbar-nav renklendir sidebar sidebar-dark accordion" id="accordionSidebar">
+	echo '<ul class="navbar-nav renklendir sidebar sidebar-dark accordion sshow" id="accordionSidebar">
 			<li>
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="',$scripturl,'">
                 <div class="sidebar-brand-icon rotate-n-15">

@@ -1000,3 +1000,14 @@
     top: -7px;
   }
 }
+@media screen and (max-width: 560px) {
+	.sidebar.sshow{
+		display: none;
+	}
+	.sidebar.toggled {
+  width: 6.5rem !important;
+  min-height: 100vh;
+  overflow: visible;
+  display: block !important;
+}
+}
