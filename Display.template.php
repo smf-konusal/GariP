@@ -7,7 +7,7 @@
  * @copyright 2022 Simple Machines and individual contributors
  * @license https://www.simplemachines.org/about/smf/license.php BSD
  *
- * @version 2.1.0
+ * @version 2.1.2
  */
  /**
  * @package GariP
@@ -617,7 +617,7 @@ function template_single_post($message)
 											<a href="', $attachment['href'], ';image" id="link_', $attachment['id'], '" onclick="', $attachment['thumbnail']['javascript'], '"><img src="', $attachment['thumbnail']['href'], '" alt="" id="thumb_', $attachment['id'], '" class="atc_img"></a>';
 				else
 					echo '
-											<img src="' . $attachment['href'] . ';image" alt="" width="' . $attachment['width'] . '" height="' . $attachment['height'] . '" loading="lazy" class="atc_img">';
+											<img src="' . $attachment['href'] . ';image" alt="" loading="lazy" class="atc_img">';
 
 				echo '
 										</div><!-- .attachments_top -->';

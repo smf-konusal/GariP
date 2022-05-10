@@ -2359,6 +2359,7 @@ dl.settings img.avatar {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+	overflow-wrap: break-word;
 }
 .topic h4 {
   margin: 3px 0;
@@ -4475,8 +4476,9 @@ tr[id^="list_news_lists_"] textarea {
   height: 100% !important;
 }
 .videocontainer video {
-  object-fit: contain;
-  background: black;
+	object-fit: contain;
+	background: black;
+	max-width: 100%;
 }
 
 .backtrace:not(:last-child) {
